@@ -16,6 +16,7 @@ namespace DataHelper
 
         //Method in Encrypting the data using MD5 Data Encryption
         //MD5 - Message-Direct algorith 5
+        //yoyoyo
         public string EncryptData(string userPassWord)
         {
             MD5CryptoServiceProvider mdHash = new MD5CryptoServiceProvider();
