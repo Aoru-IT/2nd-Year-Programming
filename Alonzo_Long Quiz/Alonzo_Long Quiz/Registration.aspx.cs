@@ -37,5 +37,7 @@ namespace Alonzo_Long_Quiz
             myData.SaveNewAccount(txtUserName.Text, txtPassword.Text, txtLastName.Text, txtFirstName.Text, txtMiddleInitial.Text
                 ,txtPhoneNumber.Text, txtAddress.Text, DateTime.Parse(txtBirthday.Text), txtGender.Text, radioUserType.SelectedItem.Text);
         }
+
+   
     }
 }

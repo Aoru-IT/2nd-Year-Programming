@@ -36,6 +36,10 @@
         .auto-style2 {
             font-weight: bold;
         }
+        .auto-style3 {
+            width: 491px;
+            height: 57px;
+        }
         .auto-style4 {
             width: 308px;
             height: 62px;
@@ -45,27 +49,13 @@
             height: 61px;
             font-weight: bold;
         }
-        .auto-style7 {
-            display: inline-block;
-            font-weight: 400;
-            color: #212529;
-            text-align: center;
-            vertical-align: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            font-size: 1rem;
-            line-height: 1.5;
-            border-radius: 0.25rem;
-            transition: none;
-            outline-width: medium;
-            outline-style: none;
-            outline-color: invert;
-            -webkit-box-shadow: none;
-            box-shadow: none;
-            border: 1px solid transparent;
-            background-color: transparent;
+        .auto-style6 {
+            height: 57px;
+        }
+        .auto-style8 {
+            width: 491px;
+            height: 57px;
+            font-weight: bold;
         }
         .auto-style9 {
             font-weight: bold;
@@ -74,6 +64,23 @@
         .auto-style10 {
             width: 491px;
             height: 61px;
+        }
+        .auto-style11 {
+            width: 99%;
+        }
+        .auto-style13 {
+            height: 26px;
+            width: 171px;
+        }
+        .auto-style14 {
+            width: 171px;
+        }
+        .auto-style15 {
+            height: 26px;
+            width: 162px;
+        }
+        .auto-style16 {
+            width: 162px;
         }
     </style>
 
@@ -104,16 +111,9 @@
                 <li class="nav-item ">
                 </li>
                 <li class="nav-item active">
-                  <a class="nav-link" href=""> Client Details<span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="Log-In.aspx">Client Details<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="Registration.aspx">
-                    <asp:LoginStatus ID="LoginStatus1" runat="server" OnLoggingOut="LoginStatus1_LoggingOut" />
-&nbsp;</a></li>
-                <li class="nav-item">
-                  &nbsp;</li>
-                <li class="nav-item">
-                  &nbsp;</li>
+                  <li class="nav-item">&nbsp;</li>
               </ul>
             </div>
           </nav>
@@ -131,30 +131,131 @@
                 <div class="col-md-6">
                   <div class="detail-box">
                     <h1>
-                        Welcome, Client!</h1>
+                        Client Details</h1>
                     <p>
-                        You may edit the following details if you do so wish.</p>
+                        Please fill out the required fields.required fields.</p>
                         <table class="auto-style9">
                             <tr>
-                                <td class="auto-style10"><strong><span class="auto-style2">
+                                <td class="auto-style10"><strong>E-mail Address:
+                                    <br />
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtUserName" runat="server" CssClass="mr-0" Width="297px"></asp:TextBox>
+                                    </span>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsername" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                      <span class="auto-style2">
+                                    <asp:Label ID="lblUserError" runat="server" ForeColor="Red" Text="E-mail already exists!" Visible="False"></asp:Label>
+                                    <br />
+                                    <table class="auto-style11">
+                                        <tr>
+                                            <td class="auto-style13"><strong>
+                      <span class="auto-style2">
+                                    <asp:Label ID="Label1" runat="server" Text="Last Name:"></asp:Label>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style15"><strong>
+                      <span class="auto-style2">
+                                    <asp:Label ID="Label2" runat="server" Text="First Name:"></asp:Label>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style15"><strong>
+                      <span class="auto-style2">
+                                    <asp:Label ID="Label3" runat="server" Text="M.I.:"></asp:Label>
+                                    </span>
+                                    </strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="auto-style14"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtLastName" runat="server" CssClass="mr-0" Width="145px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtLastName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style16"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtFirstName" runat="server" CssClass="no-gutters" Width="139px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtFirstName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style16"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtMiddleInitial" runat="server" CssClass="mr-0" Width="49px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtMiddleInitial" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
                                     Phone No.:<br />
-                                    <asp:TextBox ID="txtPhoneNumber" runat="server" CssClass="mr-0" Width="148px"></asp:TextBox>
+                                    <asp:TextBox ID="txtPhoneNumber" runat="server" CssClass="mr-0" Width="297px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtPhoneNumber" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                                     <br />
                                     Address:<br />
                                     <asp:TextBox ID="txtAddress" runat="server" CssClass="mr-0" Width="297px"></asp:TextBox>
-                                    <br />
-                                    Password:<br />
-                                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtAddress" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    <table class="auto-style11">
+                                        <tr>
+                                            <td class="auto-style13"><strong>
+                      <span class="auto-style2">
+                                    <asp:Label ID="Label4" runat="server" Text="Birthday:"></asp:Label>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style15"><strong>
+                      <span class="auto-style2">
+                                    <asp:Label ID="Label5" runat="server" Text="Gender:"></asp:Label>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style15"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="auto-style14"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtBirthday" runat="server" CssClass="mr-0" Width="145px" TextMode="Date"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtLastName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style16"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtGender" runat="server" CssClass="no-gutters" Width="139px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtFirstName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td class&nbsp;</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
                                     </span>
                                     </strong></td>
                                 <td class="auto-style5"></td>
                             </tr>
-                            </table>
+                            <tr>
+                                <td class="auto-style3"><span class="auto-style2">Type:<asp:RadioButtonList ID="radioUserType" runat="server" CellPadding="5" CellSpacing="1" Font-Bold="False" Height="36px" Width="110px">
+                                    <asp:ListItem>User</asp:ListItem>
+                                    <asp:ListItem>Admin</asp:ListItem>
+                                    </asp:RadioButtonList>
+                                    <strong><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="radioUserType" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </strong>
+                                    &nbsp;</span></td>
+                                <td class="auto-style6"></td>
+                            </tr>
+                            <tr>
+                                <td class="auto-style8">
+                                    <asp:Panel ID="Panel2" runat="server" Visible="False">
+                                        <span class="auto-style2">Password:<br />
+                                        <strong>
+                                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+                                        </strong>
+                                        </span>
+                                    </asp:Panel>
+                                </td>
+                                <td class="auto-style6"></td>
+                            </tr>
+                        </table>
                       <span class="auto-style2">
-                                    <asp:Button ID="btnRegister" runat="server" BackColor="#F3C93E" BorderStyle="None" CssClass="auto-style7" ForeColor="White" Height="46px" OnClick="Button2_Click" Text="Register" Width="149px" Visible="False" />
-                                    &nbsp;<br />
-                      <asp:Label ID="lblSuccess" runat="server" Text="Successfully Registered!" Visible="False"></asp:Label>
+                                    &nbsp;<asp:Label ID="lblSuccess" runat="server" Text="Successfully Registered!" Visible="False"></asp:Label>
+                                    <br />
+                      <br />
+                      <asp:LoginStatus ID="LoginStatus2" runat="server" />
+                      <br />
                                     </span>
                      </div>
                 </div>
@@ -173,7 +274,7 @@
                   <div class="detail-box">
                     <h1>
                       Welcome to our shop
-                    </h1>
+                                    </h1>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quam velit saepe dolorem deserunt quo quidem ad optio.
                     </p>

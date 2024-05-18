@@ -87,6 +87,23 @@
             width: 491px;
             height: 61px;
         }
+        .auto-style11 {
+            width: 99%;
+        }
+        .auto-style13 {
+            height: 26px;
+            width: 171px;
+        }
+        .auto-style14 {
+            width: 171px;
+        }
+        .auto-style15 {
+            height: 26px;
+            width: 162px;
+        }
+        .auto-style16 {
+            width: 162px;
+        }
     </style>
 
 </head>
@@ -157,23 +174,46 @@
                       <span class="auto-style2">
                                     <asp:Label ID="lblUserError" runat="server" ForeColor="Red" Text="E-mail already exists!" Visible="False"></asp:Label>
                                     <br />
+                                    <table class="auto-style11">
+                                        <tr>
+                                            <td class="auto-style13"><strong>
+                      <span class="auto-style2">
                                     <asp:Label ID="Label1" runat="server" Text="Last Name:"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    <br />
-                                    <asp:TextBox ID="txtLastName" runat="server" CssClass="mr-0" Width="297px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtLastName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                                    <br />
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style15"><strong>
+                      <span class="auto-style2">
                                     <asp:Label ID="Label2" runat="server" Text="First Name:"></asp:Label>
-                                    <br />
-                                    <asp:TextBox ID="txtFirstName" runat="server" CssClass="mr-0" Width="297px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtFirstName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                                    <br />
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style15"><strong>
+                      <span class="auto-style2">
                                     <asp:Label ID="Label3" runat="server" Text="M.I.:"></asp:Label>
-                                    <br />
+                                    </span>
+                                    </strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="auto-style14"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtLastName" runat="server" CssClass="mr-0" Width="145px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtLastName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style16"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtFirstName" runat="server" CssClass="no-gutters" Width="139px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtFirstName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style16"><strong>
+                      <span class="auto-style2">
                                     <asp:TextBox ID="txtMiddleInitial" runat="server" CssClass="mr-0" Width="49px"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtMiddleInitial" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                                    <br />
-                                    <br />
+                                    </span>
+                                    </strong></td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
                                     Phone No.:<br />
                                     <asp:TextBox ID="txtPhoneNumber" runat="server" CssClass="mr-0" Width="297px"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtPhoneNumber" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
@@ -181,14 +221,37 @@
                                     Address:<br />
                                     <asp:TextBox ID="txtAddress" runat="server" CssClass="mr-0" Width="297px"></asp:TextBox>
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtAddress" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                                    <br />
-                                    Birthday:<br />
-                                    <asp:TextBox ID="txtBirthday" runat="server" CssClass="mr-0" Width="148px" TextMode="Date"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtBirthday" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
-                                    <br />
-                                    Gender:<br />
-                                    <asp:TextBox ID="txtGender" runat="server" CssClass="mr-0" Width="148px"></asp:TextBox>
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtGender" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    <table class="auto-style11">
+                                        <tr>
+                                            <td class="auto-style13"><strong>
+                      <span class="auto-style2">
+                                    <asp:Label ID="Label4" runat="server" Text="Birthday:"></asp:Label>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style15"><strong>
+                      <span class="auto-style2">
+                                    <asp:Label ID="Label5" runat="server" Text="Gender:"></asp:Label>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style15"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="auto-style14"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtBirthday" runat="server" CssClass="mr-0" Width="145px" TextMode="Date"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtLastName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style16"><strong>
+                      <span class="auto-style2">
+                                    <asp:TextBox ID="txtGender" runat="server" CssClass="no-gutters" Width="139px"></asp:TextBox>
+                                    <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtFirstName" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                    </span>
+                                    </strong></td>
+                                            <td class="auto-style16">&nbsp;</td>
+                                            <td></td>
+                                        </tr>
+                                    </table>
                                     </span>
                                     </strong></td>
                                 <td class="auto-style5"></td>

@@ -21,5 +21,10 @@ namespace Alonzo_Long_Quiz
             FormsAuthentication.SignOut();
             Response.Redirect("~/Log-In.aspx");
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -6,23 +6,21 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Net;
 
 namespace DataHelper
 {
     public class DataAccess
     {
-        static string myConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Downloads\APPDEV RELATED\APPDEV RELATED\Alonzo_Long Quiz\Alonzo_Long Quiz\App_Data\Database1.mdf"";Integrated Security=True";
+        static string myConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Downloads\Alonzo_Long Quiz\Alonzo_Long Quiz\App_Data\Database1.mdf"";Integrated Security=True";
         SqlConnection myConn = new SqlConnection(myConStr);
 
-        //Method in Encrypting the data using MD5 Data Encryption
-        //MD5 - Message-Direct algorith 5
         public string EncryptData(string userPassWord)
         {
             MD5CryptoServiceProvider mdHash = new MD5CryptoServiceProvider();
             byte[] totalBytes = Encoding.ASCII.GetBytes(userPassWord);
             byte[] hashBytes = mdHash.ComputeHash(totalBytes);
 
-            //String Builder
             StringBuilder sb = new StringBuilder();
             for (int generateChar = 0; generateChar < hashBytes.Length; generateChar++)
             {
@@ -33,6 +31,24 @@ namespace DataHelper
         }
         string encryptedUserPassword;
 
+
+        public bool VerifyPassword(string userPassword, string passwordHash)
+        {
+            using (MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider())
+            {
+                byte[] userInputHash = md5.ComputeHash(Encoding.ASCII.GetBytes(userPassword));
+ 
+                StringBuilder userInputHashString = new StringBuilder();
+                for (int i = 0; i < userInputHash.Length; i++)
+                {
+                    userInputHashString.Append(userInputHash[i].ToString("x2"));
+                }
+
+                return string.Equals(userInputHashString.ToString(), passwordHash, StringComparison.OrdinalIgnoreCase);
+            }
+        }
+
+
         public string EncryptedUserPassword
         {
             get { return encryptedUserPassword; }
@@ -40,7 +56,6 @@ namespace DataHelper
         }
 
 
-        //Method in Saving New User
         public void SaveNewAccount(string userName, string userPassword, string lastName, string firstName,
             string middleInitial, string phoneNumber, string userAddress, DateTime birthDay, string gender, string userType)
         {
@@ -49,7 +64,7 @@ namespace DataHelper
             SqlCommand saveCmd = new SqlCommand("SaveNewAccount", myConn);
             saveCmd.CommandType = CommandType.StoredProcedure;
             saveCmd.Parameters.Add("@userName", SqlDbType.NVarChar).Value = userName;
-            saveCmd.Parameters.Add("@userPassword", SqlDbType.NVarChar).Value = encryptedUserPassword; // Password input by the user will be encrypted
+            saveCmd.Parameters.Add("@userPassword", SqlDbType.NVarChar).Value = encryptedUserPassword;
             saveCmd.Parameters.Add("@lastName", SqlDbType.NVarChar).Value = lastName;
             saveCmd.Parameters.Add("@firstName", SqlDbType.NVarChar).Value = firstName;
             saveCmd.Parameters.Add("@middleInitial", SqlDbType.NVarChar).Value = middleInitial;
@@ -78,14 +93,14 @@ namespace DataHelper
         }
 
 
-        public bool CheckAccount()
+        public bool CheckUser(string username, string password)
         {
             bool found = false;
             myConn.Open();
             SqlCommand readCmd = new SqlCommand("CheckUser", myConn);
             readCmd.CommandType = CommandType.StoredProcedure;
-            readCmd.Parameters.Add("@userName", SqlDbType.NVarChar).Value = userName;
-            readCmd.Parameters.Add("@userPassWord", SqlDbType.NVarChar).Value = userPassword;
+            readCmd.Parameters.Add("@userName", SqlDbType.NVarChar).Value = username;   
+            readCmd.Parameters.Add("@userPassWord", SqlDbType.NVarChar).Value = password;
             SqlDataReader dr;
             dr = readCmd.ExecuteReader();
             while (dr.Read())
@@ -116,6 +131,34 @@ namespace DataHelper
             myConn.Close();
 
             return found;
+        }
+   
+        public void ChangeDetails(string username, string password, string address, string phonenumber)
+        {
+            myConn.Open();
+            SqlCommand readCmd = new SqlCommand("CheckDetails", myConn);
+            readCmd.CommandType = CommandType.StoredProcedure;
+            readCmd.Parameters.Add("@Username", SqlDbType.NVarChar).Value = username;
+            readCmd.Parameters.Add("@Password", SqlDbType.NVarChar).Value = password;
+            readCmd.Parameters.Add("@Addresss", SqlDbType.NVarChar).Value = address;
+            readCmd.Parameters.Add("@PhoneNumber", SqlDbType.NVarChar).Value = phonenumber;
+
+            SqlDataReader dr;
+            dr = readCmd.ExecuteReader();
+            while (dr.Read())
+            {
+                break;
+            }
+            myConn.Close();
+        }
+
+        public DataSet ViewAll()
+        {
+            SqlDataAdapter da = new SqlDataAdapter("ViewAll", myConn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataSet ds = new DataSet();
+            da.Fill(ds, "ViewPending");
+            return ds;
         }
     }
 }

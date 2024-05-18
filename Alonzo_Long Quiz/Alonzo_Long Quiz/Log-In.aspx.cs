@@ -20,14 +20,14 @@ namespace Alonzo_Long_Quiz
         DataAccess myData = new DataAccess();
         protected void Button1_Click(object sender, EventArgs e)
         {
-            myData.UserName = txtUserName.Text;
-            myData.UserPassword = txtUserPassword.Text;
-            if (myData.CheckAccount())
+            if (myData.CheckUser(txtUserName.Text, myData.EncryptData(txtUserPassword.Text)))
             {
                 Session["getUserName"] = myData.UserName;
                 FormsAuthentication.RedirectFromLoginPage(Session["getUserName"].ToString(), false);
                 Response.Redirect("~/Default.aspx");
             }
+
+            
         }
     }
 }
