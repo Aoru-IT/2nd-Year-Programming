@@ -47,29 +47,21 @@
 
 
    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"> 
-<div class="hero_area">
+       <div class="hero_area">
     <!-- header section strats -->
-    <header class="header_section">
-      <div class="header_bottom">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
-              <span>
-               <img src="images/KemTech.png" alt="" class="auto-style2">
-              </span>
-            </a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class=""> </span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="HomePage.aspx">Loan Calculator<span class="sr-only">(current)</span></a>
-                </li>
-                 <li class="nav-item">
-                 <a class="nav-link" href="Log-In.aspx">Process Loan Application</a></li>
+           <header class="header_section">
+               <div class="header_bottom">
+                   <div class="container-fluid">
+                       <nav class="navbar navbar-expand-lg custom_nav-container ">
+                           <a class="navbar-brand" href="index.html"><span>
+                           <img src="images/ABC.png" alt="" class="auto-style2"> </span>&nbsp;</a>
+                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                               <span class=""></span>
+                           </button>
+                           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                               <ul class="navbar-nav ">
+                                   <li class="nav-item active"><a class="nav-link" href="HomePage.aspx">Loan Calculator<span class="sr-only">(current)</span></a> </li>
+                                   <li class="nav-item"><a class="nav-link" href="Log-In.aspx">Process Loan Application</a></li>
                                    <li class="nav-item"><a class="nav-link" href="Log-In.aspx">Log-out </a></li>
                                </ul>
                            </div>
@@ -91,7 +83,7 @@
                                        <div class="detail-box">
                                            <h1>Loan Calculator</h1>
                                            <p>
-                    Loan Calculator</h1>
+                                               Loan Calculator</h1>
                                            <p>
                                                You must calculate your loan before proceeding to process it.<table class="auto-style3">
                                                    </p>
@@ -160,15 +152,14 @@
                                    <div class="col-md-6">
                                        <div class="detail-box">
                                            <h1>Welcome to our shop pt src="js/jquery-3.4.1.min.js"></script>
-                                              </asp:ContentPlaceHolder > 
+                                              </div>
+        </asp:ContentPlaceHolder > 
 
   <!-- footer section -->
   <footer class="footer_section">
     <div class="container">
       <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://html.design/">Free Html Templates</a>
-      </p>
+          Made by Earl Lawrence Alonzo</p>
     </div>
   </footer>
   <!-- footer section -->

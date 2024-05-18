@@ -114,23 +114,23 @@ namespace DataHelper
             double rate = 0;
             if(Months >=1 && Months <= 5)
             {
-                rate = 0.062;
+                rate = 0.0062;
             }
             else if (Months >= 6 && Months <= 10)
             {
-                rate = 0.065;
+                rate = 0.0065;
             }
             else if (Months >= 11 && Months <= 15)
             {
-                rate = 0.068;
+                rate = 0.0068;
             }
             else if (Months >= 16 && Months <= 20)
             {
-                rate = 0.075;
+                rate = 0.0075;
             }
             else if (Months >= 21 && Months <= 25)
             {
-                rate = 0.080;
+                rate = 0.0080;
             }
 
             LoanAmount1 = BasicMonthly1 * 2.5;

@@ -24,7 +24,7 @@
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="index.html">
               <span>
-               <img src="images/KemTech.png" alt="" class="auto-style2">
+               <img src="images/ABC.png" alt="" class="auto-style2">
               </span>
             </a>
 

@@ -34,15 +34,17 @@ namespace Alonzo___Final_Exam
                         myData.SetApproval(secondColumnData, selectedValue);
                         GridView1.DataSource = myData.GrantLoans();
                         GridView1.DataBind();
-                        Response.Redirect("ViewPending.aspx");
+                        
                     }
                     else
                     {
-                        // Both options are not selected, continue to the next row
+                     
                         continue;   
                     }
                 }
             }
+
+            Response.Redirect("ViewPending.aspx");
         }
 
  
