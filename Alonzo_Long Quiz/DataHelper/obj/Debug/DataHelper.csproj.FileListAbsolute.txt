@@ -1,0 +1,6 @@
+D:\Downloads\APPDEV RELATED\APPDEV RELATED\Alonzo_Long Quiz\DataHelper\bin\Debug\DataHelper.dll
+D:\Downloads\APPDEV RELATED\APPDEV RELATED\Alonzo_Long Quiz\DataHelper\bin\Debug\DataHelper.pdb
+D:\Downloads\APPDEV RELATED\APPDEV RELATED\Alonzo_Long Quiz\DataHelper\obj\Debug\DataHelper.csproj.AssemblyReference.cache
+D:\Downloads\APPDEV RELATED\APPDEV RELATED\Alonzo_Long Quiz\DataHelper\obj\Debug\DataHelper.csproj.CoreCompileInputs.cache
+D:\Downloads\APPDEV RELATED\APPDEV RELATED\Alonzo_Long Quiz\DataHelper\obj\Debug\DataHelper.dll
+D:\Downloads\APPDEV RELATED\APPDEV RELATED\Alonzo_Long Quiz\DataHelper\obj\Debug\DataHelper.pdb

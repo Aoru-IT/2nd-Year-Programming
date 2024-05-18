@@ -1,0 +1,168 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Downloads\\Alonzo_Long Quiz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{39115CBE-A511-442F-B3FB-B85118DE1A28}|DataHelper\\DataHelper.csproj|D:\\Downloads\\Alonzo_Long Quiz\\datahelper\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39115CBE-A511-442F-B3FB-B85118DE1A28}|DataHelper\\DataHelper.csproj|solutionrelative:datahelper\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|D:\\Downloads\\Alonzo_Long Quiz\\alonzo_long quiz\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|solutionrelative:alonzo_long quiz\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|d:\\downloads\\alonzo_long quiz\\alonzo_long quiz\\registration.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|solutionrelative:alonzo_long quiz\\registration.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|D:\\Downloads\\Alonzo_Long Quiz\\alonzo_long quiz\\registration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|solutionrelative:alonzo_long quiz\\registration.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|D:\\Downloads\\Alonzo_Long Quiz\\alonzo_long quiz\\log-in.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|solutionrelative:alonzo_long quiz\\log-in.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|D:\\Downloads\\Alonzo_Long Quiz\\alonzo_long quiz\\log-in.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|solutionrelative:alonzo_long quiz\\log-in.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|D:\\Downloads\\Alonzo_Long Quiz\\alonzo_long quiz\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|solutionrelative:alonzo_long quiz\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|D:\\Downloads\\Alonzo_Long Quiz\\alonzo_long quiz\\default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|solutionrelative:alonzo_long quiz\\default.aspx.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|D:\\Downloads\\Alonzo_Long Quiz\\alonzo_long quiz\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DB203D79-FBBF-45B0-95EB-BA09C3BBE871}|Alonzo_Long Quiz\\Alonzo_Long Quiz.csproj|solutionrelative:alonzo_long quiz\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 241,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DataAccess.cs",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\DataHelper\\DataAccess.cs",
+              "RelativeDocumentMoniker": "DataHelper\\DataAccess.cs",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\DataHelper\\DataAccess.cs",
+              "RelativeToolTip": "DataHelper\\DataAccess.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwBwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T15:13:50.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Registration.aspx.cs",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Registration.aspx.cs",
+              "RelativeDocumentMoniker": "Alonzo_Long Quiz\\Registration.aspx.cs",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Registration.aspx.cs",
+              "RelativeToolTip": "Alonzo_Long Quiz\\Registration.aspx.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAxwCYAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T15:12:50.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Log-In.aspx",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Log-In.aspx",
+              "RelativeDocumentMoniker": "Alonzo_Long Quiz\\Log-In.aspx",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Log-In.aspx",
+              "RelativeToolTip": "Alonzo_Long Quiz\\Log-In.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-16T15:09:33.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Default.aspx",
+              "RelativeDocumentMoniker": "Alonzo_Long Quiz\\Default.aspx",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Default.aspx",
+              "RelativeToolTip": "Alonzo_Long Quiz\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-16T15:09:36.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Registration.aspx",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Registration.aspx",
+              "RelativeDocumentMoniker": "Alonzo_Long Quiz\\Registration.aspx",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Registration.aspx",
+              "RelativeToolTip": "Alonzo_Long Quiz\\Registration.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-05-16T15:09:03.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Default.aspx.cs",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Default.aspx.cs",
+              "RelativeDocumentMoniker": "Alonzo_Long Quiz\\Default.aspx.cs",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Default.aspx.cs",
+              "RelativeToolTip": "Alonzo_Long Quiz\\Default.aspx.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T15:28:29.2Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Default.aspx.designer.cs",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Default.aspx.designer.cs",
+              "RelativeDocumentMoniker": "Alonzo_Long Quiz\\Default.aspx.designer.cs",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Default.aspx.designer.cs",
+              "RelativeToolTip": "Alonzo_Long Quiz\\Default.aspx.designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T15:09:33.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Log-In.aspx.cs",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Log-In.aspx.cs",
+              "RelativeDocumentMoniker": "Alonzo_Long Quiz\\Log-In.aspx.cs",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Log-In.aspx.cs",
+              "RelativeToolTip": "Alonzo_Long Quiz\\Log-In.aspx.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T15:09:23.204Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Web.config",
+              "RelativeDocumentMoniker": "Alonzo_Long Quiz\\Web.config",
+              "ToolTip": "D:\\Downloads\\Alonzo_Long Quiz\\Alonzo_Long Quiz\\Web.config",
+              "RelativeToolTip": "Alonzo_Long Quiz\\Web.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-05-15T05:56:24.723Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
