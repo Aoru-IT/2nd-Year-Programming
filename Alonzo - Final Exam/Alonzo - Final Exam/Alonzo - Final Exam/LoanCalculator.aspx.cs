@@ -41,10 +41,5 @@ namespace Alonzo___Final_Exam
 
          }
 
-        protected void btnProcess_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("ProcessApplication.aspx");
-
-        }
     }
 }

@@ -12,7 +12,7 @@ namespace Alonzo___Final_Exam
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Session.Clear();
         }
         DataAccess myData = new DataAccess();
         protected void Button2_Click(object sender, EventArgs e)
@@ -26,13 +26,6 @@ namespace Alonzo___Final_Exam
                     {
                         Session["BasicMonthly"] = myData.BasicMonthly1;
                         Session["Email"] = myData.Email;
-
-                        Session["NumberOfMonths"] = 0;
-                        Session["LoanAmount"] = 0;
-                        Session["Interest"] = 0;
-                        Session["TakeHome"] = 0;
-                        Session["ServiceCharge"] = 0;
-                        Session["MonthlyAmortization"] = 0;
 
                         Response.Redirect("LoanCalculator.aspx");
                     }
