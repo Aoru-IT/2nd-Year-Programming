@@ -109,7 +109,7 @@ namespace DataHelper
         public string Approval { get => approval; set => approval = value; }
         public string Email { get => email; set => email = value; }
 
-        public void CalculateLoan(int Months)
+        public void CalculateLoan(int Months, double loanAmount)
         {
             double rate = 0;
             if(Months >=1 && Months <= 5)
@@ -133,12 +133,17 @@ namespace DataHelper
                 rate = 0.0080;
             }
 
-            LoanAmount1 = BasicMonthly1 * 2.5;
+            LoanAmount1 = loanAmount;
             Interest1 = LoanAmount1 * Months * rate;
             
             ServiceCharge1 = LoanAmount1 * 0.02;
             TakeHome1 = LoanAmount1 - (Interest1 + ServiceCharge1);
             MonthlyAmortization1 = LoanAmount1 / Months;
+        }
+
+        public double LoanableAmount(double amount)
+        {
+            return amount * 2.5;
         }
 
         public void SetApproval(string username, string approval)

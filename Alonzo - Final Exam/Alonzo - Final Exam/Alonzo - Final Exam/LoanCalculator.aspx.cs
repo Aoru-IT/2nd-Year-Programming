@@ -13,19 +13,25 @@ namespace Alonzo___Final_Exam
         DataAccess myData = new DataAccess();
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+            lblLoanable.Text = Convert.ToString(myData.LoanableAmount(Convert.ToDouble(Session["BasicMonthly"])));
         }
 
         protected void btnConfirm_Click(object sender, EventArgs e)
         {
+            if(Convert.ToDouble(txtLoanAmount.Text) > Convert.ToDouble(lblLoanable.Text))
+            {
+                lblExceed.Visible = true;
+                return;
+            }
+
+            lblExceed.Visible = false;
             myData.BasicMonthly1 = Convert.ToDouble(Session["BasicMonthly"]);
-            myData.CalculateLoan(Convert.ToInt32(txtNumberOfMonths.Text));
+            myData.CalculateLoan(Convert.ToInt32(txtNumberOfMonths.Text), Convert.ToDouble(txtLoanAmount.Text));
             lblLoanAmount.Text = Convert.ToString(myData.LoanAmount1);
             lblInterest.Text = Convert.ToString(myData.Interest1);
             lblTakeHome.Text = Convert.ToString(myData.TakeHome1);
             lblServiceCharge.Text = Convert.ToString(myData.ServiceCharge1);
             lblMonthly.Text = Convert.ToString(myData.MonthlyAmortization1);
-
 
             Session["NumberOfMonths"] = txtNumberOfMonths.Text;
             Session["LoanAmount"] = myData.LoanAmount1;
