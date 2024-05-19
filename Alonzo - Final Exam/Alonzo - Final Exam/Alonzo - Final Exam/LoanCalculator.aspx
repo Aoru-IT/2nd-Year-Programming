@@ -6,7 +6,7 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="LoanCalculator.aspx">
               <span>
                <img src="images/ABC.png" alt="" class="auto-style2">
               </span>
@@ -51,16 +51,16 @@
                                                </strong></p>
                                            <p>
                                                <strong>
-                                               <asp:Label ID="lblExceed" runat="server" ForeColor="Red" Text="Amount to loan exceeds loanable amount!" Visible="False"></asp:Label>
-                                               </strong></p>
+                                               <asp:RangeValidator ID="rangeLoanable" runat="server" ControlToValidate="txtLoanAmount" ErrorMessage="Invalid Input / Amount to loan has exceeded loanable amount!" ForeColor="Red" MinimumValue="0" Type="Double"></asp:RangeValidator>
+                                </strong></p>
                                            <p>
                                                <strong>
-                                               <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtNumberOfMonths" ErrorMessage="Allowed number of months is between 1 and 25!" ForeColor="Red" MaximumValue="25" MinimumValue="1"></asp:RangeValidator>
+                                               <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtNumberOfMonths" ErrorMessage="Allowed number of months is between 1 to 25!" ForeColor="Red" MaximumValue="25" MinimumValue="1" Type="Integer"></asp:RangeValidator>
                                 </strong></p>
                                            <p>
                                            <table class="auto-style3">
                                                <tr>
-                                                   <td class="auto-style6" style="width: 233px"><strong>Enter amount to loan:</strong></td>
+                                                   <td class="auto-style6" style="width: 244px"><strong>Enter amount to loan:</strong></td>
                                                    <td class="auto-style4" style="width: 398px">
                                                        <asp:TextBox ID="txtLoanAmount" runat="server" CssClass="auto-style8" TextMode="Number" Width="200px" style="margin-left: 0"></asp:TextBox>
                                                        <strong>
@@ -69,7 +69,7 @@
                                                    </td>
                                                </tr>
                                                <tr>
-                                                   <td class="auto-style6" style="width: 233px"><strong>Enter number of months:</strong></td>
+                                                   <td class="auto-style6" style="width: 244px"><strong>Enter number of months:</strong></td>
                                                    <td class="auto-style4" style="width: 398px">
                                                        <asp:TextBox ID="txtNumberOfMonths" runat="server" CssClass="auto-style8" TextMode="Number" Width="200px" style="margin-left: 0"></asp:TextBox>
                                                        <strong>
@@ -78,49 +78,46 @@
                                                    </td>
                                                </tr>
                                                <tr>
-                                                   <td class="auto-style6" style="width: 233px">&nbsp;</td>
+                                                   <td class="auto-style6" style="width: 244px">&nbsp;</td>
                                                    <td class="auto-style4" style="width: 398px">
                                                        <strong>
+                                                       <br />
                       <asp:Button ID="btnCalculate" runat="server" BackColor="#3A4468" BorderStyle="None" ForeColor="White" Height="40px" OnClick="btnConfirm_Click" Text="Calculate" Width="115px" />
                                                        </strong>
                                                    </td>
                                                </tr>
                                                <tr>
-                                                   <td class="auto-style7" style="width: 233px; height: 42px;">
+                                                   <td class="auto-style7" style="width: 244px; height: 42px;">
                                                    </td>
                                                    <td class="auto-style5" style="width: 398px; height: 42px;">
                                                        &nbsp;</td>
                                                </tr>
                                                <tr>
-                                                   <td class="auto-style7" style="width: 233px; height: 26px;"></td>
-                                                   <td class="auto-style5" style="width: 398px; height: 26px;"></td>
-                                               </tr>
-                                               <tr>
-                                                   <td class="auto-style7" style="width: 233px"><strong>Loan Amount:</strong></td>
+                                                   <td class="auto-style7" style="width: 244px"><strong>Loan Amount:</strong></td>
                                                    <td class="auto-style5" style="width: 398px">
                                                        <asp:Label ID="lblLoanAmount" runat="server"></asp:Label>
                                                    </td>
                                                </tr>
                                                <tr>
-                                                   <td class="auto-style7" style="width: 233px"><strong>Interest:</strong></td>
+                                                   <td class="auto-style7" style="width: 244px"><strong>Interest:</strong></td>
                                                    <td class="auto-style5" style="width: 398px">
                                                        <asp:Label ID="lblInterest" runat="server"></asp:Label>
                                                    </td>
                                                </tr>
                                                <tr>
-                                                   <td class="auto-style7" style="width: 233px; height: 26px;"><strong>Take Home Loan:</strong></td>
+                                                   <td class="auto-style7" style="width: 244px; height: 26px;"><strong>Take Home Loan:</strong></td>
                                                    <td class="auto-style5" style="width: 398px; height: 26px;">
                                                        <asp:Label ID="lblTakeHome" runat="server"></asp:Label>
                                                    </td>
                                                </tr>
                                                <tr>
-                                                   <td class="auto-style7" style="width: 233px"><strong>Service Charge:</strong></td>
+                                                   <td class="auto-style7" style="width: 244px"><strong>Service Charge:</strong></td>
                                                    <td class="auto-style5" style="width: 398px">
                                                        <asp:Label ID="lblServiceCharge" runat="server"></asp:Label>
                                                    </td>
                                                </tr>
                                                <tr>
-                                                   <td class="auto-style7" style="width: 233px"><strong>Monthly Amortization:</strong></td>
+                                                   <td class="auto-style7" style="width: 244px"><strong>Monthly Amortization:</strong></td>
                                                    <td class="auto-style5" style="width: 398px">
                                                        <asp:Label ID="lblMonthly" runat="server"></asp:Label>
                                                    </td>
@@ -131,7 +128,7 @@
                                    </div>
                                    <div class="col-md-6">
                                        <div class="img-box">
-                                           <img src="images/Home.png" alt="">
+                                           <img src="images/loan.png" alt="">
                                        </div>
                                    </div>
                                </div>

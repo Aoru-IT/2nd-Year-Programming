@@ -14,17 +14,16 @@ namespace Alonzo___Final_Exam
         protected void Page_Load(object sender, EventArgs e)
         {
             lblLoanable.Text = Convert.ToString(myData.LoanableAmount(Convert.ToDouble(Session["BasicMonthly"])));
+            rangeLoanable.MaximumValue = lblLoanable.Text;
         }
 
         protected void btnConfirm_Click(object sender, EventArgs e)
         {
             if(Convert.ToDouble(txtLoanAmount.Text) > Convert.ToDouble(lblLoanable.Text))
             {
-                lblExceed.Visible = true;
                 return;
             }
 
-            lblExceed.Visible = false;
             myData.BasicMonthly1 = Convert.ToDouble(Session["BasicMonthly"]);
             myData.CalculateLoan(Convert.ToInt32(txtNumberOfMonths.Text), Convert.ToDouble(txtLoanAmount.Text));
             lblLoanAmount.Text = Convert.ToString(myData.LoanAmount1);
