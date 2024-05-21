@@ -149,11 +149,10 @@ namespace DataHelper
         public void ChangeDetails(string username, string password, string address, string phonenumber)
         {
             myConn.Open();
-            encryptedUserPassword = EncryptData(password);
             SqlCommand readCmd = new SqlCommand("changeDetails", myConn);
             readCmd.CommandType = CommandType.StoredProcedure;
             readCmd.Parameters.Add("@Username", SqlDbType.NVarChar).Value = username;
-            readCmd.Parameters.Add("@Password", SqlDbType.NVarChar).Value = encryptedUserPassword;
+            readCmd.Parameters.Add("@Password", SqlDbType.NVarChar).Value = password;
             readCmd.Parameters.Add("@Address", SqlDbType.NVarChar).Value = address;
             readCmd.Parameters.Add("@PhoneNumber", SqlDbType.NVarChar).Value = phonenumber;
 

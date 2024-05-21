@@ -45,7 +45,6 @@ namespace Alonzo_LongQuiz
 
 
             myData.ChangeDetails(Convert.ToString(Session["UserName"]), password, address, phonenumber);
-            lblSuccess.Visible = true;
             Response.Redirect("Default.aspx");
         }
     }

@@ -37,11 +37,9 @@
                     </table>
                     Phone No.:<br />
                     <asp:TextBox ID="txtPhoneNumber" runat="server" CssClass="mr-0" Width="297px" ForeColor="Black"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtPhoneNumber" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                     <br />
                     Address:<br />
                     <asp:TextBox ID="txtAddress" runat="server" CssClass="mr-0" Width="297px" ForeColor="Black"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtAddress" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                     <table class="auto-style11">
                         <tr>
                             <td class="auto-style13" style="width: 140px"><strong><span class="auto-style2">
@@ -77,7 +75,6 @@
                     <asp:Panel ID="Panel2" runat="server">
                         <span class="auto-style2" style="color: #000080; font-weight: bolder">Password:<br /> <strong>
                         <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" ForeColor="Black"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         </strong></span>
                     </asp:Panel>
                 </td>
@@ -90,10 +87,5 @@
         <br />
         <asp:Button ID="Button1" runat="server" BackColor="#000099" BorderStyle="None" ForeColor="White" Height="41px" OnClick="Button1_Click" Text="Save Changes" Width="216px" />
         <br />
-        <span class="auto-style2">
-        <strong>
-        <asp:Label ID="lblSuccess" runat="server" ForeColor="#006600" Text="Changed Successfully!" Visible="False"></asp:Label>
-        </strong>
-        </span>
     </asp:Panel>
 </asp:Content>
