@@ -168,7 +168,7 @@ namespace DataHelper
             SqlDataAdapter da = new SqlDataAdapter("ViewAll", myConn);
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataSet ds = new DataSet();
-            da.Fill(ds, "myTable");
+            da.Fill(ds, "ViewAll");
             return ds;
         }
     }

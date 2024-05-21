@@ -5,13 +5,11 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using DataHelper;
 
 namespace Alonzo_LongQuiz
 {
-    public partial class WebForm1 : System.Web.UI.Page
+    public partial class Default : System.Web.UI.Page
     {
-        DataAccess myData = new DataAccess();
         protected void Page_Load(object sender, EventArgs e)
         {
             lblEmail.Text = Session["UserName"] as String;
@@ -34,35 +32,7 @@ namespace Alonzo_LongQuiz
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            string address, phonenumber;
-            string password = "";
-            if (txtAddress.Text == "")
-            {
-                address = Session["UserAddress"] as String;
-            }
-            else
-            {
-                address = txtAddress.Text;
-            }
-           
-            if(txtPassword.Text == "")
-            {
-                password = Session["Password"] as String;
-            }
-            else
-            {
-                password = myData.EncryptData(txtPassword.Text);
-            }
 
-            if(txtPhoneNumber.Text == "")
-            {
-                phonenumber = Session["PhoneNumber"] as String;
-            }
-            else
-            {
-                phonenumber = txtPhoneNumber.Text;
-            }
-            myData.ChangeDetails(Convert.ToString(Session["UserName"]), password, address, phonenumber);
         }
     }
 }
