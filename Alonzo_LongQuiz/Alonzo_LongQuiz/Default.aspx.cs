@@ -5,11 +5,13 @@ using System.Web;
 using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DataHelper;
 
 namespace Alonzo_LongQuiz
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class WebForm1 : System.Web.UI.Page
     {
+        DataAccess myData = new DataAccess();
         protected void Page_Load(object sender, EventArgs e)
         {
             lblEmail.Text = Session["UserName"] as String;
@@ -21,6 +23,7 @@ namespace Alonzo_LongQuiz
             DateTime Birthday = Convert.ToDateTime(Session["Birthday"]);
             lblBirthday.Text = Birthday.ToString("yyyy-MM-dd");
             lblGender.Text = Session["Gender"] as String;
+            lblPassword.Text = Session["Password"] as String;
         }
 
         protected void LoginStatus1_LoggingOut(object sender, LoginCancelEventArgs e)
@@ -32,7 +35,18 @@ namespace Alonzo_LongQuiz
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            string address = string.IsNullOrEmpty(txtAddress.Text) ? Session["UserAddress"] as string : txtAddress.Text;
+            string password = string.IsNullOrEmpty(txtPassword.Text) ? Session["Password"] as string : myData.EncryptData(txtPassword.Text);
+            string phonenumber = string.IsNullOrEmpty(txtPhoneNumber.Text) ? Session["PhoneNumber"] as string : txtPhoneNumber.Text;
 
+            Session["UserAddress"] = address;
+            Session["Password"] = password;
+            Session["PhoneNumber"] = phonenumber;
+
+
+            myData.ChangeDetails(Convert.ToString(Session["UserName"]), password, address, phonenumber);
+            lblSuccess.Visible = true;
+            Response.Redirect("Default.aspx");
         }
     }
 }

@@ -11,17 +11,17 @@ namespace Alonzo_LongQuiz
 {
 
 
-    public partial class Default
+    public partial class WebForm1
     {
 
         /// <summary>
-        /// form1 control.
+        /// Panel3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Panel Panel3;
 
         /// <summary>
         /// lblEmail control.
@@ -204,6 +204,15 @@ namespace Alonzo_LongQuiz
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator10;
 
         /// <summary>
+        /// lblPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblPassword;
+
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>
@@ -220,14 +229,5 @@ namespace Alonzo_LongQuiz
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblSuccess;
-
-        /// <summary>
-        /// LoginStatus2 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LoginStatus LoginStatus2;
     }
 }

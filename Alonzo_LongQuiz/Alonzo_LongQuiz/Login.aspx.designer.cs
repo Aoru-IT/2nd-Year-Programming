@@ -11,17 +11,26 @@ namespace Alonzo_LongQuiz
 {
 
 
-    public partial class Login
+    public partial class WebForm2
     {
 
         /// <summary>
-        /// form1 control.
+        /// Panel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
+
+        /// <summary>
+        /// Panel3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Panel Panel3;
 
         /// <summary>
         /// txtUserName control.
@@ -33,13 +42,13 @@ namespace Alonzo_LongQuiz
         protected global::System.Web.UI.WebControls.TextBox txtUserName;
 
         /// <summary>
-        /// RequiredFieldValidator3 control.
+        /// RequiredFieldValidator5 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
 
         /// <summary>
         /// txtUserPassword control.
@@ -51,22 +60,22 @@ namespace Alonzo_LongQuiz
         protected global::System.Web.UI.WebControls.TextBox txtUserPassword;
 
         /// <summary>
-        /// RequiredFieldValidator4 control.
+        /// RequiredFieldValidator6 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
 
         /// <summary>
-        /// lblIncorrect control.
+        /// lblIncorrect0 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblIncorrect;
+        protected global::System.Web.UI.WebControls.Label lblIncorrect0;
 
         /// <summary>
         /// btnLogIn control.

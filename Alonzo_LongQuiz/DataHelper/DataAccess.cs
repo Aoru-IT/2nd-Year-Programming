@@ -11,7 +11,7 @@ namespace DataHelper
 {
     public class DataAccess
     {
-        static string myConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Downloads\Alonzo_Long Quiz\Alonzo_Long Quiz\App_Data\Database1.mdf"";Integrated Security=True";
+        static string myConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""D:\Downloads\APPDEV RELATED (1)\APPDEV RELATED\Alonzo_LongQuiz\Alonzo_LongQuiz\App_Data\Database1.mdf"";Integrated Security=True";
         SqlConnection myConn = new SqlConnection(myConStr);
 
         public string EncryptData(string userPassWord)
@@ -103,6 +103,9 @@ namespace DataHelper
             dr = readCmd.ExecuteReader();
             while (dr.Read())
             {
+
+
+
                 UserName = dr.GetString(0);
                 Lastname = dr.GetString(1);
                 Firstname = dr.GetString(2);
@@ -147,11 +150,11 @@ namespace DataHelper
         {
             myConn.Open();
             encryptedUserPassword = EncryptData(password);
-            SqlCommand readCmd = new SqlCommand("CheckDetails", myConn);
+            SqlCommand readCmd = new SqlCommand("changeDetails", myConn);
             readCmd.CommandType = CommandType.StoredProcedure;
             readCmd.Parameters.Add("@Username", SqlDbType.NVarChar).Value = username;
             readCmd.Parameters.Add("@Password", SqlDbType.NVarChar).Value = encryptedUserPassword;
-            readCmd.Parameters.Add("@Addresss", SqlDbType.NVarChar).Value = address;
+            readCmd.Parameters.Add("@Address", SqlDbType.NVarChar).Value = address;
             readCmd.Parameters.Add("@PhoneNumber", SqlDbType.NVarChar).Value = phonenumber;
 
             SqlDataReader dr;
@@ -168,7 +171,7 @@ namespace DataHelper
             SqlDataAdapter da = new SqlDataAdapter("ViewAll", myConn);
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataSet ds = new DataSet();
-            da.Fill(ds, "ViewAll");
+            da.Fill(ds, "myTable");
             return ds;
         }
     }
