@@ -6,7 +6,7 @@
         Please fill out the required fields.</p>
     <table class="auto-style9">
         <tr>
-            <td class="auto-style10"><strong style="color: #000080">E-mail Address:
+            <td class="auto-style10" style="width: 472px"><strong style="color: #000080">E-mail Address:
                 <br />
                 <span class="auto-style2">
                 <asp:TextBox ID="txtUserName" runat="server" CssClass="mr-0" Width="297px"></asp:TextBox>
@@ -77,7 +77,7 @@
             <td class="auto-style5" style="width: 10px"></td>
         </tr>
         <tr>
-            <td class="auto-style3"><span class="auto-style2" style="color: #000080; font-weight: bold;">Type:<asp:RadioButtonList ID="radioUserType" runat="server" CellPadding="5" CellSpacing="1" Font-Bold="False" RepeatDirection="Horizontal" Height="36px" Width="189px">
+            <td class="auto-style3" style="width: 472px"><span class="auto-style2" style="color: #000080; font-weight: bold;">Type:<asp:RadioButtonList ID="radioUserType" runat="server" CellPadding="5" CellSpacing="1" Font-Bold="False" RepeatDirection="Horizontal" Height="36px" Width="189px">
                 <asp:ListItem>User</asp:ListItem>
                 <asp:ListItem>Admin</asp:ListItem>
                 </asp:RadioButtonList>
@@ -87,7 +87,7 @@
             <td class="auto-style6" style="width: 10px"></td>
         </tr>
         <tr>
-            <td class="auto-style8">
+            <td class="auto-style8" style="width: 472px">
                 <asp:Panel ID="Panel2" runat="server" Visible="False">
                     <span class="auto-style2" style="color: #000080"><strong>Password:</strong><br /> <strong>
                     <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
