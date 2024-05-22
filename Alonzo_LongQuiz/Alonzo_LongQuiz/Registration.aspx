@@ -72,6 +72,7 @@
                         <td class="auto-style16">&nbsp;</td>
                     </tr>
                 </table>
+                <asp:Label ID="lblAgeError" runat="server" ForeColor="Red" Text="You must be 18 years or older to proceed" Visible="False"></asp:Label>
                 </span></strong></td>
             <td class="auto-style5" style="width: 10px"></td>
         </tr>

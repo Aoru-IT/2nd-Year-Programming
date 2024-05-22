@@ -26,7 +26,23 @@ namespace Alonzo_LongQuiz
                 btnRegister.Visible = false;
                 return;
             }
+
+            DateTime birthDate = DateTime.Parse(txtBirthday.Text);
+            DateTime today = DateTime.Today;
+            int age = today.Year - birthDate.Year;
+            if (birthDate.Date > today.AddYears(-age)) age--;
+
+            if (age < 18)
+            {
+                lblSuccess.Visible = false;
+                lblAgeError.Visible = true;
+                Panel2.Visible = false;
+                btnRegister.Visible = false;
+                return;
+            }
+
             lblUserError.Visible = false;
+            lblAgeError.Visible = false;
             Panel2.Visible = true;
             btnRegister.Visible = true;
         }
@@ -55,6 +71,7 @@ namespace Alonzo_LongQuiz
             Panel2.Visible = false;
             btnRegister.Visible = false;
             lblUserError.Visible = false;
+            lblAgeError.Visible = false;
         }
 
     }
