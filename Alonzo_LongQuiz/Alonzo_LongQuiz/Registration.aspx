@@ -81,23 +81,19 @@
                 <asp:ListItem>User</asp:ListItem>
                 <asp:ListItem>Admin</asp:ListItem>
                 </asp:RadioButtonList>
-                <asp:Button ID="Button1" runat="server" BackColor="#000099" BorderStyle="None" CssClass="auto-style7" ForeColor="White" Height="32px" OnClick="Button1_Click" Text="Set Type" Width="150px" />
                 &nbsp;<strong><asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="radioUserType" ErrorMessage="*" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
                 </strong></span></td>
             <td class="auto-style6" style="width: 10px"></td>
         </tr>
         <tr>
-            <td class="auto-style8" style="width: 472px">
-                <asp:Panel ID="Panel2" runat="server" Visible="False">
-                    <span class="auto-style2" style="color: #000080"><strong>Password:</strong><br /> <strong>
-                    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                    <span class="auto-style2" style="color: #000080; font-weight: bold;">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
-                    </span>
-                    </strong></span>
-                </asp:Panel>
+            <td class="auto-style8" style="width: 472px; height: 23px;">
+                <span class="auto-style2" style="color: #000080"><strong>Password:</strong><br /> <strong>
+                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+                <span class="auto-style2" style="color: #000080; font-weight: bold;">
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtPassword" Display="Dynamic" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
+                </span></strong></span>
             </td>
-            <td class="auto-style6" style="width: 10px"></td>
+            <td class="auto-style6" style="width: 10px; height: 23px;"></td>
         </tr>
     </table>
     <span class="auto-style2">
@@ -106,7 +102,7 @@
         <br />
 &nbsp;<asp:Button ID="btnClear" runat="server" BackColor="#CC0000" BorderStyle="None" CausesValidation="False" CssClass="auto-style7" ForeColor="White" Height="46px" OnClick="Button3_Click" Text="Clear" Width="150px" />
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnRegister" runat="server" BackColor="#000099" BorderStyle="None" CssClass="auto-style7" ForeColor="White" Height="46px" OnClick="Button2_Click" Text="Register" Visible="False" Width="150px" />
+        <asp:Button ID="btnRegister" runat="server" BackColor="#000099" BorderStyle="None" CssClass="auto-style7" ForeColor="White" Height="46px" OnClick="Button2_Click" Text="Register" Width="150px" />
         <br />
     </span>
 </asp:Panel>

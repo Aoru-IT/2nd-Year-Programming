@@ -18,12 +18,15 @@ namespace Alonzo_LongQuiz
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
             if (myData.CheckType(txtUserName.Text))
             {
                 lblSuccess.Visible = false;
                 lblUserError.Visible = true;
-                Panel2.Visible = false;
-                btnRegister.Visible = false;
                 return;
             }
 
@@ -36,19 +39,11 @@ namespace Alonzo_LongQuiz
             {
                 lblSuccess.Visible = false;
                 lblAgeError.Visible = true;
-                Panel2.Visible = false;
-                btnRegister.Visible = false;
                 return;
             }
 
             lblUserError.Visible = false;
-            lblAgeError.Visible = false;
-            Panel2.Visible = true;
-            btnRegister.Visible = true;
-        }
-
-        protected void Button2_Click(object sender, EventArgs e)
-        {
+            lblAgeError.Visible = false; 
             lblSuccess.Visible = true;
             myData.SaveNewAccount(txtUserName.Text, txtPassword.Text, txtLastName.Text, txtFirstName.Text, txtMiddleInitial.Text
             , txtPhoneNumber.Text, txtAddress.Text, DateTime.Parse(txtBirthday.Text), txtGender.Text, radioUserType.SelectedItem.Text);
@@ -68,8 +63,6 @@ namespace Alonzo_LongQuiz
             txtGender.Text = String.Empty;
             radioUserType.SelectedIndex = -1;
             lblSuccess.Visible = false;
-            Panel2.Visible = false;
-            btnRegister.Visible = false;
             lblUserError.Visible = false;
             lblAgeError.Visible = false;
         }
