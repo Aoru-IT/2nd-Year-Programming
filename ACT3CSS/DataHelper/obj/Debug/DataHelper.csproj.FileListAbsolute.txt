@@ -1,0 +1,6 @@
+C:\Users\Admin\Downloads\ACT3CSS\DataHelper\bin\Debug\DataHelper.dll
+C:\Users\Admin\Downloads\ACT3CSS\DataHelper\bin\Debug\DataHelper.pdb
+C:\Users\Admin\Downloads\ACT3CSS\DataHelper\obj\Debug\DataHelper.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\ACT3CSS\DataHelper\obj\Debug\DataHelper.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\ACT3CSS\DataHelper\obj\Debug\DataHelper.dll
+C:\Users\Admin\Downloads\ACT3CSS\DataHelper\obj\Debug\DataHelper.pdb

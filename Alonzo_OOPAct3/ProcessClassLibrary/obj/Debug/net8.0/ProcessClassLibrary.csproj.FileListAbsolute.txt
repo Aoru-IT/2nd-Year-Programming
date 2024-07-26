@@ -1,0 +1,11 @@
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\bin\Debug\net8.0\ProcessClassLibrary.deps.json
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\bin\Debug\net8.0\ProcessClassLibrary.dll
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\bin\Debug\net8.0\ProcessClassLibrary.pdb
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\obj\Debug\net8.0\ProcessClassLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\obj\Debug\net8.0\ProcessClassLibrary.AssemblyInfoInputs.cache
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\obj\Debug\net8.0\ProcessClassLibrary.AssemblyInfo.cs
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\obj\Debug\net8.0\ProcessClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\obj\Debug\net8.0\ProcessClassLibrary.dll
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\obj\Debug\net8.0\refint\ProcessClassLibrary.dll
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\obj\Debug\net8.0\ProcessClassLibrary.pdb
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\ProcessClassLibrary\obj\Debug\net8.0\ref\ProcessClassLibrary.dll

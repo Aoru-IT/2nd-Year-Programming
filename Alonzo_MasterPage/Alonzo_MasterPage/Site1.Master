@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Alonzo_OOP.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Bahnschrift" Font-Size="Medium" ForeColor="#666666" OnMenuItemClick="Menu1_MenuItemClick" Orientation="Horizontal" StaticSubMenuIndent="10px">
+                <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#E3EAEB" />
+                <DynamicSelectedStyle BackColor="#1C5E55" />
+                <Items>
+                    <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Default.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="System" Value="System">
+                        <asp:MenuItem Text="Registration" Value="Registration" NavigateUrl="~/Registration.aspx"></asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/SignIn.aspx" Text="Sign-In" Value="Sign-In"></asp:MenuItem>
+                    </asp:MenuItem>
+                    <asp:MenuItem Text="Records" Value="Records">
+                        <asp:MenuItem Text="Search Records" Value="Search" NavigateUrl="~/SearchRecords.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="All Records" Value="All" NavigateUrl="~/ViewAll.aspx"></asp:MenuItem>
+                    </asp:MenuItem>
+                </Items>
+                <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#666666" Font-Bold="True" ForeColor="White" />
+            </asp:Menu>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

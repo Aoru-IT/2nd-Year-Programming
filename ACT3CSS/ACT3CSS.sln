@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34616.47
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACT3CSS", "ACT3CSS\ACT3CSS.csproj", "{825CF605-B6B1-4E20-A9CE-AED246D39DA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataHelper", "DataHelper\DataHelper.csproj", "{8B582A32-5D9E-477F-A7C7-B881BD688FBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{825CF605-B6B1-4E20-A9CE-AED246D39DA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{825CF605-B6B1-4E20-A9CE-AED246D39DA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{825CF605-B6B1-4E20-A9CE-AED246D39DA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{825CF605-B6B1-4E20-A9CE-AED246D39DA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B582A32-5D9E-477F-A7C7-B881BD688FBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B582A32-5D9E-477F-A7C7-B881BD688FBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B582A32-5D9E-477F-A7C7-B881BD688FBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B582A32-5D9E-477F-A7C7-B881BD688FBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6EB681B0-164D-44EF-94E7-3A1F377F4152}
+	EndGlobalSection
+EndGlobal

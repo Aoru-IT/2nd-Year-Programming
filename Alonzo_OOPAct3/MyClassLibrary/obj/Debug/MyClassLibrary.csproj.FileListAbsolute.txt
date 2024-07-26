@@ -1,0 +1,6 @@
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\MyClassLibrary\bin\Debug\MyClassLibrary.dll
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\MyClassLibrary\bin\Debug\MyClassLibrary.pdb
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.AssemblyReference.cache
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\MyClassLibrary\obj\Debug\MyClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\MyClassLibrary\obj\Debug\MyClassLibrary.dll
+C:\Users\Admin\Downloads\Alonzo_OOPAct3\MyClassLibrary\obj\Debug\MyClassLibrary.pdb
